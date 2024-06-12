@@ -15,7 +15,7 @@ for a=1:length(vsetky_velkosti_vrstiev)
     for spustenie=1:pocet_spusteni
         fprintf('%s : GA obyčajný, vrstvy NS %s, spustenie č. %d\n', string(datetime), strjoin(string(velkosti_vrstiev), '_'), spustenie)
         ucenie_GA;
-        save(append('GA___', strjoin(string(velkosti_vrstiev), '_'), '___', string(spustenie), '.mat'));
+        save(append('GA_obycajny___', strjoin(string(velkosti_vrstiev), '_'), '___', string(spustenie), '.mat'));
         clearvars -except vsetky_velkosti_vrstiev velkosti_vrstiev spustenie a pocet_spusteni;
         
         fprintf('%s : GA ostrovný, vrstvy NS %s, spustenie č. %d\n', string(datetime), strjoin(string(velkosti_vrstiev), '_'), spustenie)

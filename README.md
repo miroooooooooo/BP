@@ -13,8 +13,9 @@ Pre Autonómne vozidlo treba taktiež
 
 
 Obidve aplikácie obsahujú:
-- skript `ucenie_vsetko.m`, ktorý spustí učenie jednotlivých evolučných algoritmov a uloží naučené údaje
+- skript `ucenie_vsetko.m`, ktorý spustí učenie jednotlivých evolučných algoritmov a uloží naučené údaje (**POZOR** môže prepísať súbory s už naučenými údajmi)
 - skript `zrob_grafy.m`, ktorý podľa zadefinovaných názvov načíta jednotlivé súbory s naučenými neurónovými sieťami, pre ktoré následne vygeneruje grafy
+- súbory s naučenými sieťami v tvare *<evolučný algorimtus>___<štruktúra siete>___<poradie spustenia>.mat*
 
 Autonómne vozidlo následne obsahuje ešte
 - funkciu `simulate_run.m` pomocou ktorej viete zobraziť simuláciu pre danú sieť

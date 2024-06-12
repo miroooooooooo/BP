@@ -1,6 +1,6 @@
 close all; clear; clc;
 
-algoritmy = {"GA", "GA_ostrovny", "DE", "PSO"};
+algoritmy = {"GA_obycajny", "GA_ostrovny", "DE", "PSO"};
 struktury_ns = {"4_6_6_1", "4_10_10_1", "4_15_15_1"};
 
 pocet_zbehnuti = 10;
@@ -57,10 +57,10 @@ for algo=1:length(algoritmy)
             set(gca, "fontsize", 14)
 
             fit_values(run) = test_fitness;
-            sprintf("%s, run no. %d, fitness: %f", algoritmy{algo}, run, test_fitness)
+            fprintf("%s %s, run no. %d, fitness: %f\n", algoritmy{algo}, struktury_ns{s}, run, test_fitness)
         end
 
 
-        sprintf("%s %s, min fit: %f, mean fit: %f, max fit: %f", algoritmy{algo}, struktury_ns{s}, min(fit_values), mean(fit_values), max(fit_values))
+        fprintf("\n%s %s, min fit: %f, mean fit: %f, max fit: %f\n\n\n\n", algoritmy{algo}, struktury_ns{s}, min(fit_values), mean(fit_values), max(fit_values))
     end
 end

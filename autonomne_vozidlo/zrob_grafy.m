@@ -1,7 +1,6 @@
 close all; clear; clc;
 
-algoritmy = {"GA_jednoduchy", "GA_ostrovny2", "DE", "PSO"};
-% algoritmy = {"GA_obycajny", "GA_ostrovny", "DE", "PSO"};
+algoritmy = {"GA_obycajny", "GA_ostrovny", "DE", "PSO"};
 struktury_ns = {"8_6_6_2", "8_10_10_2", "8_15_15_2"};
 
 pocet_zbehnuti = 10;
